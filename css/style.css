@@ -1,0 +1,18 @@
+p {
+    color:yellow;
+    background-color: black;
+    text-align: center;
+}
+h1 {
+    color: red;
+    background-color: black;
+    text-align: center;
+}
+
+.redpara {
+    color: red;
+}
+
+.line {
+    text-decoration: underline;
+}

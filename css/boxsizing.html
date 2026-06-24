@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box sizing in css</title>
+    <style>
+        * {
+            margin: 0px;
+        }
+        h1 {
+            text-shadow: 10px 10px 5px red;
+        }
+        .nb {
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            padding: 20px;
+            border: 10px solid green;
+            margin: 10px;
+        }
+        .cb {
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            box-sizing: content-box;
+            padding: 20px;
+            border: 10px solid green;
+            margin: 10px;
+        }
+        .bb {
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            box-sizing: border-box;
+            padding: 20px;
+            border: 10px solid green;
+            margin: 10px;
+        }
+    
+    </style>
+</head>
+<body>
+    <h1>Box Sizing in CSS</h1>
+    <div class="nb">normal box</div>
+    <div class="cb">content box</div>
+    <div class="bb">border box</div>
+</body>
+</html>

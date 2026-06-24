@@ -1,0 +1,126 @@
+ * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: serif;
+    background: #e5e5e5;
+}
+
+/* Container */
+.container {
+    width: 95%;
+    margin: 10px auto;
+}
+
+/* Header */
+.header {
+    border: 2px solid green;
+    padding: 15px;
+    background: #e6e2c3;
+}
+
+/* Main layout */
+.main {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+/* Left links */
+.links {
+    border: 2px solid green;
+    padding: 15px;
+    background: #e6e2c3;
+}
+
+.links a {
+    display: block;
+    color: blue;
+    margin-bottom: 5px;
+}
+
+/* Content */
+.content {
+    border: 2px solid green;
+    padding: 20px;
+    background: #e6e2c3;
+}
+
+.content h1 {
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+/* Right side */
+.right {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.ads, .sidebar {
+    border: 2px solid green;
+    padding: 20px;
+    background: #e6e2c3;
+}
+
+/* Footer */
+.footer {
+    border: 2px solid green;
+    padding: 15px;
+    margin-top: 10px;
+    background: #e6e2c3;
+}
+
+/* 📱 Medium Screens (2-column layout) */
+@media (min-width: 576px) {
+    .main {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .links {
+        width: 30%;
+    }
+
+    .content {
+        width: 65%;
+    }
+
+    .right {
+        width: 100%;
+        flex-direction: row;
+    }
+
+    .ads, .sidebar {
+        width: 50%;
+    }
+}
+
+/* 💻 Large Screens (3-column layout) */
+@media (min-width: 768px) {
+    .main {
+        flex-wrap: nowrap;
+    }
+
+    .links {
+        width: 20%;
+    }
+
+    .content {
+        width: 55%;
+    }
+
+    .right {
+        width: 25%;
+        flex-direction: column;
+    }
+
+    .ads, .sidebar {
+        width: 100%;
+    }
+}
